@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZDIMBTNO</ROLLNAME>
+    <DDLANGUAGE>1</DDLANGUAGE>
+    <DOMNAME>ZDIMBTNO</DOMNAME>
+    <HEADLEN>20</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>20</SCRLEN2>
+    <SCRLEN3>30</SCRLEN3>
+    <DDTEXT>银行对帐单导入模板号</DDTEXT>
+    <REPTEXT>银行对帐单导入模板号</REPTEXT>
+    <SCRTEXT_S>导入模板号</SCRTEXT_S>
+    <SCRTEXT_M>银行对帐单导入模板号</SCRTEXT_M>
+    <SCRTEXT_L>银行对帐单导入模板号</SCRTEXT_L>
+    <DTELMASTER>1</DTELMASTER>
+    <SHLPNAME>ZDIMBTNO</SHLPNAME>
+    <SHLPFIELD>ZDIMBTNO</SHLPFIELD>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

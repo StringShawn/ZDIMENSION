@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SHLP" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD30V>
+    <SHLPNAME>ZDIMRFIELD</SHLPNAME>
+    <DDLANGUAGE>1</DDLANGUAGE>
+    <DDTEXT>模板读取字段帮助</DDTEXT>
+    <ISSIMPLE>X</ISSIMPLE>
+    <SELMETHOD>ZDIMFIELDT</SELMETHOD>
+    <SELMTYPE>T</SELMTYPE>
+    <DIALOGTYPE>D</DIALOGTYPE>
+   </DD30V>
+   <DD32P_TABLE>
+    <DD32P>
+     <SHLPNAME>ZDIMRFIELD</SHLPNAME>
+     <FIELDNAME>ZDIMRFIELD</FIELDNAME>
+     <FLPOSITION>0001</FLPOSITION>
+     <ROLLNAME>ZDIMRFIELD</ROLLNAME>
+     <SHLPINPUT>X</SHLPINPUT>
+     <SHLPOUTPUT>X</SHLPOUTPUT>
+     <SHLPLISPOS>01</SHLPLISPOS>
+     <SCRLEN3>30</SCRLEN3>
+    </DD32P>
+    <DD32P>
+     <SHLPNAME>ZDIMRFIELD</SHLPNAME>
+     <FIELDNAME>ZDIMFTXT</FIELDNAME>
+     <FLPOSITION>0002</FLPOSITION>
+     <ROLLNAME>ZDIMFTXT</ROLLNAME>
+     <SHLPOUTPUT>X</SHLPOUTPUT>
+     <SHLPLISPOS>02</SHLPLISPOS>
+     <SCRLEN3>30</SCRLEN3>
+    </DD32P>
+   </DD32P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

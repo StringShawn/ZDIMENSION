@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>银行对账程序函数组</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZDIMENSION_ZFI_COLLTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZDIMENSION_ZFI_COLL</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZDIMENSION_FED_GET_SUB_BALANCE</FUNCNAME>
+     <SHORT_TEXT>获取科目余额</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>RCLNT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>MANDT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>BUKRS</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BUKRS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>RYEAR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>GJAHR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>RPMAX</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>RPMAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>USCOD</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZDIMUSCOD</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ACCOUNT_BALANCE</PARAMETER>
+       <DBFIELD>BAPI1028_3-BALANCE</DBFIELD>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ACCOUNT</PARAMETER>
+       <DBSTRUCT>ZBAPI_ACC</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>BALANCE</PARAMETER>
+       <DBSTRUCT>ZBAPI_ACC_BAL</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>RCLNT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>客户端</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>BUKRS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>公司代码</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RYEAR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>会计年度</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RPMAX</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>期间</STEXT>
+       <INDEX> 004</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>USCOD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>银行账号</STEXT>
+       <INDEX> 005</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ACCOUNT_BALANCE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>帐户余额</STEXT>
+       <INDEX> 006</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ACCOUNT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>总账科目结构</STEXT>
+       <INDEX> 007</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>BALANCE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>科目余额结构</STEXT>
+       <INDEX> 008</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZDIMENSION_FED_GET_SUB_BALAN_A</FUNCNAME>
+     <SHORT_TEXT>获取科目余额</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>RCLNT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>MANDT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>BUKRS</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BUKRS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>RYEAR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>GJAHR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>RPMAX</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>RPMAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>USCOD</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZDIMUSCOD</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>RLDNR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>FAGL_RLDNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ACCOUNT_BALANCE</PARAMETER>
+       <DBFIELD>BAPI1028_3-BALANCE</DBFIELD>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ACCOUNT</PARAMETER>
+       <DBSTRUCT>ZBAPI_ACC</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>BALANCE</PARAMETER>
+       <DBSTRUCT>ZBAPI_ACC_BAL</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>RCLNT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>客户端</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>BUKRS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>公司代码</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RYEAR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>会计年度</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RPMAX</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>期间</STEXT>
+       <INDEX> 004</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>USCOD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>银行账号</STEXT>
+       <INDEX> 005</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RLDNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>总分类帐会计核算中分类帐</STEXT>
+       <INDEX> 006</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ACCOUNT_BALANCE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>帐户余额</STEXT>
+       <INDEX> 007</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ACCOUNT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>总账科目结构</STEXT>
+       <INDEX> 008</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>BALANCE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>科目余额结构</STEXT>
+       <INDEX> 009</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
